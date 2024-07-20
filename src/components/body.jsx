@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 function Body() {
   const [todo, setTodo] = useState("");
@@ -14,7 +12,7 @@ function Body() {
     const interval = setInterval(() => {
       todos.forEach(item => {
         if (item.dueDate && new Date(item.dueDate) <= new Date()) {
-          toast(`Reminder: ${item.todo} is due!`);
+          // Remove toast notifications
         }
       });
     }, 60000); // Check every minute
@@ -145,7 +143,7 @@ function Body() {
           </Droppable>
         </DragDropContext>
       </div>
-      <ToastContainer />
+      {/* Remove ToastContainer */}
     </div>
   );
 }
