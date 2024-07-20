@@ -60,14 +60,14 @@ export function HoverBorderGradient({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className={cn(
-        "relative flex rounded-full content-center bg-black/20 hover:bg-slate-800 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px border-none decoration-clone w-full border-2 ",
+        "relative flex rounded-full  content-center w-full z-10 bg-transparent hover:bg-slate-800 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px border-none decoration-clone   ",
         containerClassName
       )}
       {...props}
     >
       <div
         className={cn(
-          "w-auto  bg-gradient-to-tr from-violet-950 via-violet-400 to-violet-900  font-bold lg:text-3xl md:text-2xl sm:text-xl font-serif  z-10 bg-black px-4 py-2 rounded-full text-black   ",
+          "w-auto  bg-gradient-to-tr from-violet-950 via-violet-400 to-violet-900  font-bold lg:text-3xl md:text-2xl sm:text-xl font-serif  z-10 bg-transparent px-4 py-2 rounded-full  text-black   ",
           className
         )}
       >

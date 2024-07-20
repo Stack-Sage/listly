@@ -12,7 +12,7 @@ export function VortexDemo() {
         
       >
       
-      <div>
+      <div className=" ">
          <Body/>
       </div>
          

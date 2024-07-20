@@ -78,7 +78,7 @@ function Body() {
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
-          className="todo flex w-full justify-between mb-2 p-2 bg-transparent border-2 border-violet-800 dark:bg-gray-700 rounded-xl shadow text-violet-500 font-bold hover:border-violet-500 hover:scale-105 ease-in-out transition-transform"
+          className="todo flex w-full justify-between mb-2 p-2 bg-transparent border border-violet-800 dark:bg-gray-700 rounded-xl shadow text-violet-500 font-bold hover:border-violet-500 hover:scale-105 ease-in-out transition-transform"
         >
           <input
             name={item.id}
@@ -111,19 +111,19 @@ function Body() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="container w-full overflow-hidden mx-auto my-5 rounded-md pb-20 mb-25 p-5 bg-transparent h-screen">
+      <div className="container  w-full overflow-hidden mx-auto my-5 rounded-md pb-20 mb-25 p-5 bg-transparent  h-screen">
         <div className="addTodo my-5">
-          <h2 className="text-lg font-bold">Add a Todo</h2>
+          <h2 className="text-lg font-bold lg:mb-20 md:mb-16  sm:mb-12 max-sm:mb-10"></h2>
           <input
             type="text"
             onChange={handleChange}
             value={todo}
-            className="p-1 w-auto rounded-lg text-violet-400 bg-black border-2 border-violet-800 hover:border-violet-500"
+            className="p-1 w-auto rounded-lg text-violet-400 bg-black border-2 border-violet-800 hover:border-violet-500 "
             placeholder="Enter a Task Here . . ."
           />
           <button
             onClick={handleAdd}
-            className="add rounded-2xl hover:scale-105 text-violet-500 font-semibold hover:border-violet-500 border-violet-800 border-2 bg-transparent w-fit  p-2 mx-3"
+            className="add rounded-2xl hover:scale-105 text-violet-500 font-semibold hover:border-violet-500 border-violet-800 border-2 bg-transparent w-autp  p-2 mx-3"
           >
             {editId ? "Update" : "Add Todo"}
           </button>

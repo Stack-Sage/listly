@@ -13,7 +13,7 @@ const App = () => {
 
      
       
-      <div className="flex h-screen fixed w-full    ">
+      <div className="flex h-screen absolute top-0 w-full  inset-0 bg-black  ">
       <VortexDemo/>
       
       <div className=" absolute  flex items-center bottom-2  w-full justify-center   text-violet-500 hover:text-violet-800  bg-transparent z-10 ">
