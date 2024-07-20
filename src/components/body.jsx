@@ -123,7 +123,7 @@ function Body() {
           />
           <button
             onClick={handleAdd}
-            className="add rounded-2xl hover:scale-105 text-violet-500 font-semibold hover:border-violet-500 border-violet-800 border-2 bg-transparent w-fit hover:bg-cyan-100 p-2 mx-3"
+            className="add rounded-2xl hover:scale-105 text-violet-500 font-semibold hover:border-violet-500 border-violet-800 border-2 bg-transparent w-fit  p-2 mx-3"
           >
             {editId ? "Update" : "Add Todo"}
           </button>
